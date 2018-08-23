@@ -1,4 +1,4 @@
-{% set version = "3.0.7" %}
+{% set version = "4.0.0" %}
 
 package:
   name: libpysal
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/l/libpysal/libpysal-{{ version }}.tar.gz
-  sha256: 17b9bcc769a40bd1e5f61d453cd72e60aa440521b6d164c5ac3e8bcda50c3669
+  sha256: f865dd3dc54596bc8960569db6719dc52b854188b4862ed075a08df8a22d7aaa
 
 build:
   number: 0
@@ -28,21 +28,12 @@ test:
     - libpysal
     - libpysal.cg
     - libpysal.cg.ops
-    - libpysal.cg.ops.tests
-    - libpysal.cg.tests
     - libpysal.examples
     - libpysal.examples.examples
-    - libpysal.examples.tests
     - libpysal.io
-    - libpysal.io.IOHandlers
-    - libpysal.io.IOHandlers.tests
     - libpysal.io.geotable
-    - libpysal.io.geotable.tests
-    - libpysal.io.tests
     - libpysal.io.util
-    - libpysal.io.util.tests
     - libpysal.weights
-    - libpysal.weights.tests
 
 about:
   home: http://pysal.org
