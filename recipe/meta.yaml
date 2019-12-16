@@ -1,4 +1,4 @@
-{% set version = "4.1.1" %}
+{% set version = "4.2.0" %}
 
 package:
   name: libpysal
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/l/libpysal/libpysal-{{ version }}.tar.gz
-  sha256: 10e13d8ba8f74781b2c0b600d3429a9d3943cdb655089a676742a9bb935bacff
+  sha256: a14469e9f307308f19a3c27b76647d04254e3ca77cdbbefce31426d759d6e50f
 
 build:
   number: 0
@@ -15,13 +15,17 @@ build:
 
 requirements:
   host:
-    - python >=3
+    - python >=3.6
     - pip
   run:
-    - python >=3
+    - python >=3.6
+    - scipy >=0.11
     - numpy >=1.3
     - pandas
-    - scipy >=0.11
+    - requests
+    - jinja2
+    # not in the metadata but need
+    - beautifulsoup4
 
 test:
   imports:
@@ -29,9 +33,10 @@ test:
     - libpysal.cg
     - libpysal.cg.ops
     - libpysal.examples
-    - libpysal.examples.examples
     - libpysal.io
     - libpysal.io.geotable
+    - libpysal.io.iohandlers
+    - libpysal.io.tests
     - libpysal.io.util
     - libpysal.weights
 
