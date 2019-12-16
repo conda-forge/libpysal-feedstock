@@ -24,6 +24,8 @@ requirements:
     - pandas
     - requests
     - jinja2
+    # not in the metadata but need
+    - beautifulsoup4
 
 test:
   imports:
@@ -31,9 +33,10 @@ test:
     - libpysal.cg
     - libpysal.cg.ops
     - libpysal.examples
-    - libpysal.examples.examples
     - libpysal.io
     - libpysal.io.geotable
+    - libpysal.io.iohandlers
+    - libpysal.io.tests
     - libpysal.io.util
     - libpysal.weights
 
