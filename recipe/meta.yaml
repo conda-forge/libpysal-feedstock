@@ -25,7 +25,7 @@ requirements:
     - requests
     - jinja2
     # not in the metadata but need
-    - beautifulsoup4
+    - bs4
 
 test:
   imports:
