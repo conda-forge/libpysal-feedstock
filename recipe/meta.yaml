@@ -39,6 +39,10 @@ test:
     - libpysal.io.tests
     - libpysal.io.util
     - libpysal.weights
+  commands:
+    - pip check
+  requires:
+    - pip
 
 about:
   home: http://pysal.org
