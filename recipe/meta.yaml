@@ -1,4 +1,4 @@
-{% set version = "4.2.2" %}
+{% set version = "4.3.0" %}
 
 package:
   name: libpysal
@@ -6,17 +6,18 @@ package:
 
 source:
   url: https://pypi.io/packages/source/l/libpysal/libpysal-{{ version }}.tar.gz
-  sha256: b4dabe084efbc0a81f762bb0680377e72220b3396817f1ba021f7426ea81e27a
+  sha256: d7cb34aa20f07c93d8f1f12431aa7c6aa9a08b92cc4396022a04fc2086e5d2d7
 
 build:
   number: 0
   noarch: python
-  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - python >=3.6
     - pip
+    - pytest-runner
   run:
     - python >=3.6
     - scipy >=0.11
