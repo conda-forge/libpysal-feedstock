@@ -5,11 +5,9 @@ Home: http://pysal.org
 
 Package license: BSD-3-Clause
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/libpysal-feedstock/blob/master/LICENSE.txt)
 
 Summary: Core components of PySAL A library of spatial analysis functions
-
-
 
 Current build status
 ====================
