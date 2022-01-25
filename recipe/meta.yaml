@@ -15,18 +15,21 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python >=3.7
     - pip
     - pytest-runner
   run:
-    - python >=3.6
-    - scipy >=0.11
+    - python >=3.7
+    - appdirs
+    - beautifulsoup4
+    - jinja2
     - numpy >=1.3
+    - packaging
     - pandas
     - requests
-    - jinja2
-    # not in the metadata but need
-    - bs4
+    - scipy >=0.11
+    # needed but not declared.
+    - shapely
 
 test:
   imports:
@@ -40,11 +43,11 @@ test:
     - libpysal.io.tests
     - libpysal.io.util
     - libpysal.weights
-# pip check is not smart enough to know that an import name is not the package name :-(
-# commands:
-#  - pip check
-# requires:
-#  - pip
+  # pip check is not smart enough to know that an import name is not the package name :-(
+  commands:
+  - pip check
+  requires:
+  - pip
 
 about:
   home: http://pysal.org
@@ -55,3 +58,5 @@ about:
 extra:
   recipe-maintainers:
     - ocefpaf
+    - jGaboardi
+    - martinfleis
