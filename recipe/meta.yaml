@@ -1,4 +1,4 @@
-{% set version = "4.6.0" %}
+{% set version = "4.6.2" %}
 
 package:
   name: libpysal
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/l/libpysal/libpysal-{{ version }}.tar.gz
-  sha256: 8a1fa713b7b9d7a037f6ce2ae5b9a72fc86b2da219994ca76d5ac439358987d0
+  sha256: 8a4c4651394aefc6332f2fb1f38336c559e50dc89f977bfaa3d8541610eaa634
 
 build:
   number: 0
@@ -45,9 +45,9 @@ test:
     - libpysal.weights
   # pip check is not smart enough to know that an import name is not the package name :-(
   commands:
-  - pip check
+    - pip check
   requires:
-  - pip
+    - pip
 
 about:
   home: http://pysal.org
