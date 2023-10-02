@@ -18,6 +18,8 @@ requirements:
     - python >=3.8
     - pip
     - pytest-runner
+    - setuptools >=61.0
+    - setuptools-scm >=6.2
   run:
     - python >=3.8
     - platformdirs
