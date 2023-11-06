@@ -9,29 +9,29 @@ source:
   sha256: 621f9fbbd1394193adfc590f1096ab959cee83bade388987c075e44326b5a3f1
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python >=3.8
+    - python >=3.10
     - pip
     - pytest-runner
     - setuptools >=61.0
     - setuptools-scm >=6.2
   run:
-    - python >=3.8
+    - python >=3.10
     - platformdirs
     - beautifulsoup4
     - jinja2
-    - numpy >=1.3
+    - numpy >=1.22
     - packaging
     - pandas >=1.4
     - requests
     - scipy >=1.8
     - geopandas
-    - shapely >=2.0
+    - shapely >=2.0.1
 
 test:
   imports:
