@@ -43,7 +43,9 @@ tests:
       imports:
         - libpysal
       pip_check: true
-      python_version: ${{ python_min }}.*
+      python_version:
+        - ${{ python_min }}.*
+        - "*"
 
 about:
   summary: Core components of PySAL - A library of spatial analysis functions
@@ -53,4 +55,6 @@ about:
 
 extra:
   recipe-maintainers:
+    - jGaboardi
+    - martinfleis
     - ocefpaf
