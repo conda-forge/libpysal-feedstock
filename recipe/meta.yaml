@@ -1,5 +1,5 @@
 {% set python_min = "3.11" %}
-{% set version = "4.14.1" %}
+{% set version = "4.15.0" %}
 
 package:
   name: libpysal
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/l/libpysal/libpysal-{{ version }}.tar.gz
-  sha256: 84a0a832178e57b54f7da35f1c3385c1eaf99016ec8ff819add3b89d36aaff1c
+  sha256: db9eee1579678a2eec6974c831dc93abf612a4df5a3c45e9d7ed35ea5f9e2497
 
 build:
   number: 0
@@ -22,18 +22,19 @@ requirements:
     - setuptools >=61.0
     - setuptools-scm >=6.2
   run:
+    - geodatasets
     - jinja2
     - python >={{ python_min }}
     - beautifulsoup4 >=4.13.0
-    - geopandas >=0.14.0
-    - numpy >=1.26.0
-    - packaging >=23.2
-    - pandas >=2.1.0
-    - platformdirs >=3.11.0
+    - geopandas >=1.1.0
+    - numpy >=2.0.0
+    - packaging >=24.1
+    - pandas >=2.3.0
+    - platformdirs >=4.3
     - requests >=2.32.0
-    - scipy >=1.12.0
-    - shapely >=2.0
-    - scikit-learn >=1.4.0
+    - scipy >=1.14.0
+    - shapely >=2.1
+    - scikit-learn >=1.5.0
 
 test:
   imports:
