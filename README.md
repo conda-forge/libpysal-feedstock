@@ -3,11 +3,11 @@ About libpysal-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/libpysal-feedstock/blob/main/LICENSE.txt)
 
-Home: http://pysal.org
+Home: https://pypi.org/project/libpysal/
 
 Package license: BSD-3-Clause
 
-Summary: Core components of PySAL A library of spatial analysis functions
+Summary: Core components of PySAL - A library of spatial analysis functions
 
 Current build status
 ====================
@@ -144,7 +144,5 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
-* [@jGaboardi](https://github.com/jGaboardi/)
-* [@martinfleis](https://github.com/martinfleis/)
 * [@ocefpaf](https://github.com/ocefpaf/)
 
