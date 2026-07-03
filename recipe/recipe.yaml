@@ -1,0 +1,59 @@
+schema_version: 1
+
+context:
+  python_min: "3.12"
+  version: "4.15.0"
+
+package:
+  name: libpysal
+  version: ${{ version }}
+
+source:
+  url: https://pypi.org/packages/source/l/libpysal/libpysal-${{ version }}.tar.gz
+  sha256: db9eee1579678a2eec6974c831dc93abf612a4df5a3c45e9d7ed35ea5f9e2497
+
+build:
+  number: 0
+  noarch: python
+  script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
+
+requirements:
+  host:
+    - python ${{ python_min }}.*
+    - setuptools >=61.0
+    - setuptools-scm >=6.2
+    - pip
+  run:
+    - python >=${{ python_min }}
+    - beautifulsoup4 >=4.13.0
+    - geopandas >=1.1.0
+    - jinja2
+    - numpy >=2.0.0
+    - packaging >=24.1
+    - pandas >=2.3.0
+    - platformdirs >=4.3
+    - requests >=2.32.0
+    - scikit-learn >=1.5.0
+    - scipy >=1.14.0
+    - shapely >=2.1
+
+tests:
+  - python:
+      imports:
+        - libpysal
+      pip_check: true
+      python_version:
+        - ${{ python_min }}.*
+        - "*"
+
+about:
+  summary: Core components of PySAL - A library of spatial analysis functions
+  license: BSD-3-Clause
+  license_file: LICENSE.txt
+  homepage: https://pypi.org/project/libpysal/
+
+extra:
+  recipe-maintainers:
+    - jGaboardi
+    - martinfleis
+    - ocefpaf

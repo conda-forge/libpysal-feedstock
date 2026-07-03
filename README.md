@@ -3,20 +3,21 @@ About libpysal-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/libpysal-feedstock/blob/main/LICENSE.txt)
 
-Home: http://pysal.org
+Home: https://pypi.org/project/libpysal/
 
 Package license: BSD-3-Clause
 
-Summary: Core components of PySAL A library of spatial analysis functions
+Summary: Core components of PySAL - A library of spatial analysis functions
 
 Current build status
 ====================
 
 
-<table><tr><td>All platforms:</td>
+<table><tr>
+    <td>All platforms:</td>
     <td>
-      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=4857&branchName=main">
-        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/libpysal-feedstock?branchName=main">
+      <a href="https://github.com/conda-forge/libpysal-feedstock/actions/workflows/conda-build.yml">
+        <img src="https://github.com/conda-forge/libpysal-feedstock/actions/workflows/conda-build.yml/badge.svg?event=push&branch=main">
       </a>
     </td>
   </tr>
@@ -143,7 +144,5 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
-* [@jGaboardi](https://github.com/jGaboardi/)
-* [@martinfleis](https://github.com/martinfleis/)
 * [@ocefpaf](https://github.com/ocefpaf/)
 
