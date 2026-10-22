@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   python_min: "3.12"
-  version: "4.15.0"
+  version: "4.15.1"
 
 package:
   name: libpysal
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/l/libpysal/libpysal-${{ version }}.tar.gz
-  sha256: db9eee1579678a2eec6974c831dc93abf612a4df5a3c45e9d7ed35ea5f9e2497
+  sha256: df4d91e93b6cdf3c9d3a47ae9c0ce6efa85502b227496a36178facafd594c4d1
 
 build:
   number: 0
